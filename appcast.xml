@@ -6,6 +6,21 @@
 		<description>The most recent changes for KeepingYouAwake.</description>
 		<language>en</language>
 		<item>
+			<title><![CDATA[Version 1.2.1: AC Power Update]]></title>
+			<description><![CDATA[<ul>
+<li><p>Fixed an issue where &#8220;Start at Login&#8221; would crash when clicked multiple times in a row <em>(Fixed by <a href="https://github.com/registered99">registered99</a>, thank you!)</em></p></li>
+<li><p>Less aggressive awake handling when the MacBook lid is closed by using the <code>caffeinate -di</code> command instead of <code>caffeinate -disu</code></p></li>
+<li><p>You can revert back to the previous behaviour by pasting the following snippet into <em>Terminal.app</em>:</p>
+
+<pre><code>defaults write info.marcel-dierkes.KeepingYouAwake.PreventSleepOnACPower -bool YES
+</code></pre></li>
+<li><p><code>ctrl</code> + <code>click</code> will now display the menu</p></li>
+</ul>]]></description>
+			<pubDate>Sun, 11 Jan 2015 19:20:00 GMT</pubDate>
+			<enclosure url="https://github.com/newmarcel/KeepingYouAwake/releases/download/1.2.1/KeepingYouAwake-1.2.1.zip" length="1482545" type="application/octet-stream" sparkle:version="122" sparkle:shortVersionString="1.2.1">
+			</enclosure>
+		</item>
+		<item>
 			<title><![CDATA[Version 1.2: Activation Timer]]></title>
 			<description><![CDATA[<ul>
     <li>There are no significant changes since beta1</li>

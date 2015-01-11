@@ -12,6 +12,26 @@ appcast.setChannelConfiguration
     link: "https://newmarcel.github.io/KeepingYouAwake/appcast.xml"
     description: "The most recent changes for KeepingYouAwake."
 
+# Version 1.2.1
+appcast.addItem
+    title: "Version 1.2.1: AC Power Update"
+    description: '''
+    <ul>
+    <li><p>Fixed an issue where &#8220;Start at Login&#8221; would crash when clicked multiple times in a row <em>(Fixed by <a href="https://github.com/registered99">registered99</a>, thank you!)</em></p></li>
+    <li><p>Less aggressive awake handling when the MacBook lid is closed by using the <code>caffeinate -di</code> command instead of <code>caffeinate -disu</code></p></li>
+    <li><p>You can revert back to the previous behaviour by pasting the following snippet into <em>Terminal.app</em>:</p>
+
+    <pre><code>defaults write info.marcel-dierkes.KeepingYouAwake.PreventSleepOnACPower -bool YES
+    </code></pre></li>
+    <li><p><code>ctrl</code> + <code>click</code> will now display the menu</p></li>
+    </ul>
+    '''
+    date: new Date("2015-01-11 20:20:00")
+    file_url: 'https://github.com/newmarcel/KeepingYouAwake/releases/download/1.2.1/KeepingYouAwake-1.2.1.zip'
+    file_length: 1482545
+    file_version: '122'
+    file_short_version: '1.2.1'
+
 # Version 1.2
 appcast.addItem
     title: "Version 1.2: Activation Timer"
